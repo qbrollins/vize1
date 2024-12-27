@@ -9,7 +9,7 @@
 
 <div class="row">
     <div class="col-md-4">
-        <form asp-controller="Product" asp-action="Update" method="post">
+        <form asp-controller="Surway" asp-action="Update" method="post">
 
             <div class="mb-2">
                 <label asp-for="Name"></label>
@@ -23,7 +23,7 @@
             </div>
             <div class="mb-2">
                 <label asp-for="SurwayQuestionsId"> </label>
-                <select asp-for="SurwayQuestionsId" class="form-control" asp-items="@ViewBag.Categories">
+                <select asp-for="SurwayQuestionsId" class="form-control" asp-items="@ViewBag.SurwayQuestions">
                     <option value="">Seçiniz</option>
                 </select>
             </div>
